@@ -1,3 +1,14 @@
+
+> **Nota:** Este repositorio es un fork de trabajo de
+> [Theochem-merida/xjam2](https://github.com/Theochem-merida/xjam2).
+> El código original de JAM es autoría de Jessica Arcudia, Filiberto
+> Ortiz-Chi y Gabriel Merino. Ver la carpeta `pruebas/` para el trabajo
+> propio sobre canonicalización, desarrollado para proponer una mejora
+> al método de detección de duplicados.
+
+---
+
+
 <<<<<<< HEAD
 # xjam
 Joining and Arrangement of Multilayers

@@ -62,36 +62,37 @@ def elementos_S3():
 
 
 def generar_grupo_std(optionx):
-    """
-    Genera la lista de operaciones del grupo G para la opción dada.
-
-    Opciones 1-2 (planar): G ≅ S_3 × Z/2Z, 12 elementos.
-    Opciones 3, 5, 6 (mismo elemento arriba/abajo): G ≅ S_3 × Z/2Z × Z/2Z, 24 elementos.
-    Opciones 4, 7, 8 (elementos distintos arriba/abajo): G ≅ S_3 × Z/2Z, 12 elementos.
-
-    La restricción de sign se justifica físicamente: el reflejo vertical
-    solo es simetría cuando el mismo elemento está arriba y abajo en cada capa.
-    """
-    S3 = elementos_S3()
-    Z2_flip = [lambda a: a, lambda a: flip(a)]
-
-    # sign solo aplica si el mismo elemento está arriba y abajo
-    if optionx in [3, 5, 6]:
-        Z2_sign = [lambda a: a, lambda a: sign(a)]
-    else:
-        Z2_sign = [lambda a: a]
-
-    operaciones = []
-    for s in S3:
-        for f in Z2_flip:
-            for c in Z2_sign:
-                def op(a, s=s, f=f, c=c):
-                    x = s(a)
-                    x = f(x)
-                    x = c(x)
-                    return x
+        """
+        Genera el grupo de operaciones para la opción dada.
+    
+        Opciones planas (1, 2): no hay buckling. El grupo es S3 × {e, flip},
+        con 12 elementos. Sign no aplica.
+    
+        Opciones con buckling (3-8): la simetría vertical relevante es la
+        composición sign·flip (reflexión global del sistema). El grupo es
+        S3 × {e, sign·flip}, con 12 elementos.
+        """
+        S3 = elementos_S3()
+    
+        if optionx in [1, 2]:
+            Z2_vertical = [
+                lambda a: a,
+                lambda a: flip(a.copy())
+            ]
+        else:
+            Z2_vertical = [
+                lambda a: a,
+                lambda a: sign(flip(a.copy()))
+            ]
+    
+        operaciones = []
+        for s in S3:
+            for v in Z2_vertical:
+                def op(a, s=s, v=v):
+                    return v(s(a))
                 operaciones.append(op)
-    return operaciones
+    
+        return operaciones
 
 
 # Clave canónica

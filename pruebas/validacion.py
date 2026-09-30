@@ -116,7 +116,18 @@ def validar_opcion(optionx, num_layers):
 
     print(f"✓ ({len(viejas)} clases)")
     return True
+    # 5. Comparar clases (por claves canónicas, no por arrays)
+    keys_viejas = set(canonical_key_std(v, optionx) for v in viejas)
+    keys_nuevas = set(canonical_key_std(v, optionx) for v in nuevas)
 
+    if keys_viejas != keys_nuevas:
+        print(f"✗ FALLO: clases distintas")
+        print(f"    solo viejo: {len(keys_viejas - keys_nuevas)}")
+        print(f"    solo nuevo: {len(keys_nuevas - keys_viejas)}")
+        return False
+
+    print(f"✓ {len(viejas)} clases, claves idénticas")
+    return True
 
 if __name__ == "__main__":
     print("=== Validación: método viejo vs método canónico ===\n")

@@ -1,0 +1,797 @@
+REPORTE COMPLETO DE VALIDACIÓN
+Método actual vs método canónico
+Opciones: 1-8. Niveles: [2, 3]
+
+======================================================================
+RESUMEN
+======================================================================
+Opción   n    Viejo    Nuevo    ¿Iguales?
+---------------------------------------------
+     1   2        2        2            ✓
+     1   3        4        4            ✓
+     2   2        5        5            ✓
+     2   3       21       21            ✓
+     3   2        5        5            ✓
+     3   3       21       21            ✓
+     4   2       16       16            ✓
+     4   3      144      144            ✓
+     5   2        5        5            ✓
+     5   3       21       21            ✓
+     6   2        5        5            ✓
+     6   3       21       21            ✓
+     7   2       16       16            ✓
+     7   3      144      144            ✓
+     8   2       16       16            ✓
+     8   3      144      144            ✓
+
+✓ Todas las opciones producen exactamente las mismas clases.
+
+======================================================================
+DETALLE POR OPCIÓN
+======================================================================
+
+======================================================================
+Opción 1, n = 2
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 9
+Viejo: 2 estructuras, 2 claves únicas
+Nuevo: 2 estructuras, 2 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (2):
+  +0+0/+j+j/+j+j
+  +0+j/+j+0/+j+j
+
+======================================================================
+Opción 1, n = 3
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 12
+Viejo: 4 estructuras, 4 claves únicas
+Nuevo: 4 estructuras, 4 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (4):
+  +0+0+0/+j+j+j/+j+j+j
+  +0+0+j/+j+j+0/+j+j+j
+  +0+j+0/+j+0+j/+j+j+j
+  +0+j+j/+j+0+j/+j+j+0
+
+======================================================================
+Opción 2, n = 2
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 36
+Viejo: 5 estructuras, 5 claves únicas
+Nuevo: 5 estructuras, 5 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (5):
+  +0+0/+j+j/+k+k
+  +0+0/+j+k/+k+j
+  +0+j/+j+0/+k+k
+  +0+j/+j+k/+k+0
+  +0+k/+j+j/+k+0
+
+======================================================================
+Opción 2, n = 3
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 60
+Viejo: 21 estructuras, 21 claves únicas
+Nuevo: 21 estructuras, 21 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (21):
+  +0+0+0/+j+j+j/+k+k+k
+  +0+0+0/+j+j+k/+k+k+j
+  +0+0+0/+j+k+j/+k+j+k
+  +0+0+j/+j+j+0/+k+k+k
+  +0+0+j/+j+j+k/+k+k+0
+  +0+0+j/+j+k+0/+k+j+k
+  +0+0+j/+j+k+k/+k+j+0
+  +0+0+k/+j+j+0/+k+k+j
+  +0+0+k/+j+j+j/+k+k+0
+  +0+0+k/+j+k+0/+k+j+j
+  +0+0+k/+j+k+j/+k+j+0
+  +0+j+0/+j+0+j/+k+k+k
+  +0+j+0/+j+0+k/+k+k+j
+  +0+j+0/+j+k+j/+k+0+k
+  +0+j+j/+j+0+k/+k+k+0
+  +0+j+j/+j+k+0/+k+0+k
+  +0+j+k/+j+0+j/+k+k+0
+  +0+j+k/+j+k+0/+k+0+j
+  +0+k+0/+j+0+j/+k+j+k
+  +0+k+0/+j+0+k/+k+j+j
+  +0+k+0/+j+j+j/+k+0+k
+
+======================================================================
+Opción 3, n = 2
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 36
+Viejo: 5 estructuras, 5 claves únicas
+Nuevo: 5 estructuras, 5 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (5):
+  +0+0/+j+j/-j-j
+  +0+0/+j-j/-j+j
+  +0+j/+j+0/-j-j
+  +0+j/+j-j/-j+0
+  +0-j/+j+0/-j+j
+
+======================================================================
+Opción 3, n = 3
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 60
+Viejo: 21 estructuras, 21 claves únicas
+Nuevo: 21 estructuras, 21 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (21):
+  +0+0+0/+j+j+j/-j-j-j
+  +0+0+0/+j+j-j/-j-j+j
+  +0+0+0/+j-j+j/-j+j-j
+  +0+0+j/+j+j+0/-j-j-j
+  +0+0+j/+j+j-j/-j-j+0
+  +0+0+j/+j-j+0/-j+j-j
+  +0+0+j/+j-j-j/-j+j+0
+  +0+0-j/+j+j+0/-j-j+j
+  +0+0-j/+j+j+j/-j-j+0
+  +0+0-j/+j-j+0/-j+j+j
+  +0+0-j/+j-j+j/-j+j+0
+  +0+j+0/+j+0+j/-j-j-j
+  +0+j+0/+j+0-j/-j-j+j
+  +0+j+0/+j-j+j/-j+0-j
+  +0+j+0/+j-j-j/-j+0+j
+  +0+j+j/+j+0-j/-j-j+0
+  +0+j+j/+j-j+0/-j+0-j
+  +0+j-j/+j-j+0/-j+0+j
+  +0-j+j/+j+0-j/-j+j+0
+  +0-j+j/+j+j+0/-j+0-j
+  +0-j-j/+j+j+0/-j+0+j
+
+======================================================================
+Opción 4, n = 2
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 144
+Viejo: 16 estructuras, 16 claves únicas
+Nuevo: 16 estructuras, 16 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (16):
+  +0+0/+j+j/-k-k
+  +0+0/+j+k/-k-j
+  +0+0/+j-j/-k+k
+  +0+0/+j-k/-k+j
+  +0+0/+k+j/-j-k
+  +0+0/+k-k/-j+j
+  +0+j/+j+0/-k-k
+  +0+j/+j-k/-k+0
+  +0+j/+k+0/-j-k
+  +0+j/+k-k/-j+0
+  +0+k/+j+0/-k-j
+  +0+k/+j-j/-k+0
+  +0+k/+k+0/-j-j
+  +0-j/+j+0/-k+k
+  +0-j/+k+0/-j+k
+  +0-k/+k+0/-j+j
+
+======================================================================
+Opción 4, n = 3
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 384
+Viejo: 144 estructuras, 144 claves únicas
+Nuevo: 144 estructuras, 144 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (144):
+  +0+0+0/+j+j+j/-k-k-k
+  +0+0+0/+j+j+k/-k-k-j
+  +0+0+0/+j+j-j/-k-k+k
+  +0+0+0/+j+j-k/-k-k+j
+  +0+0+0/+j+k+j/-k-j-k
+  +0+0+0/+j+k-j/-k-j+k
+  +0+0+0/+j+k-k/-k-j+j
+  +0+0+0/+j-j+j/-k+k-k
+  +0+0+0/+j-j+k/-k+k-j
+  +0+0+0/+j-j-k/-k+k+j
+  +0+0+0/+j-k+j/-k+j-k
+  +0+0+0/+j-k-k/-k+j+j
+  +0+0+0/+k+j+j/-j-k-k
+  +0+0+0/+k+j-k/-j-k+j
+  +0+0+0/+k+k-k/-j-j+j
+  +0+0+0/+k-j+j/-j+k-k
+  +0+0+j/+j+j+0/-k-k-k
+  +0+0+j/+j+j-k/-k-k+0
+  +0+0+j/+j+k+0/-k-j-k
+  +0+0+j/+j+k-k/-k-j+0
+  +0+0+j/+j-j+0/-k+k-k
+  +0+0+j/+j-j-k/-k+k+0
+  +0+0+j/+j-k+0/-k+j-k
+  +0+0+j/+j-k-k/-k+j+0
+  +0+0+j/+k+j+0/-j-k-k
+  +0+0+j/+k+j-k/-j-k+0
+  +0+0+j/+k+k+0/-j-j-k
+  +0+0+j/+k+k-k/-j-j+0
+  +0+0+j/+k-j+0/-j+k-k
+  +0+0+j/+k-j-k/-j+k+0
+  +0+0+j/+k-k+0/-j+j-k
+  +0+0+j/+k-k-k/-j+j+0
+  +0+0+k/+j+j+0/-k-k-j
+  +0+0+k/+j+j-j/-k-k+0
+  +0+0+k/+j+k+0/-k-j-j
+  +0+0+k/+j+k-j/-k-j+0
+  +0+0+k/+j-j+0/-k+k-j
+  +0+0+k/+j-j-j/-k+k+0
+  +0+0+k/+j-k+0/-k+j-j
+  +0+0+k/+j-k-j/-k+j+0
+  +0+0+k/+k+j+0/-j-k-j
+  +0+0+k/+k+j-j/-j-k+0
+  +0+0+k/+k+k+0/-j-j-j
+  +0+0+k/+k+k-j/-j-j+0
+  +0+0+k/+k-j+0/-j+k-j
+  +0+0+k/+k-j-j/-j+k+0
+  +0+0+k/+k-k+0/-j+j-j
+  +0+0+k/+k-k-j/-j+j+0
+  +0+0-j/+j+j+0/-k-k+k
+  +0+0-j/+j+j+k/-k-k+0
+  +0+0-j/+j+k+0/-k-j+k
+  +0+0-j/+j+k+k/-k-j+0
+  +0+0-j/+j-j+0/-k+k+k
+  +0+0-j/+j-j+k/-k+k+0
+  +0+0-j/+j-k+0/-k+j+k
+  +0+0-j/+j-k+k/-k+j+0
+  +0+0-j/+k+j+0/-j-k+k
+  +0+0-j/+k+j+k/-j-k+0
+  +0+0-j/+k+k+0/-j-j+k
+  +0+0-j/+k+k+k/-j-j+0
+  +0+0-j/+k-j+0/-j+k+k
+  +0+0-j/+k-j+k/-j+k+0
+  +0+0-j/+k-k+0/-j+j+k
+  +0+0-j/+k-k+k/-j+j+0
+  +0+0-k/+j+j+0/-k-k+j
+  +0+0-k/+j+j+j/-k-k+0
+  +0+0-k/+j+k+0/-k-j+j
+  +0+0-k/+j+k+j/-k-j+0
+  +0+0-k/+j-j+0/-k+k+j
+  +0+0-k/+j-j+j/-k+k+0
+  +0+0-k/+j-k+0/-k+j+j
+  +0+0-k/+j-k+j/-k+j+0
+  +0+0-k/+k+j+0/-j-k+j
+  +0+0-k/+k+j+j/-j-k+0
+  +0+0-k/+k+k+0/-j-j+j
+  +0+0-k/+k+k+j/-j-j+0
+  +0+0-k/+k-j+0/-j+k+j
+  +0+0-k/+k-j+j/-j+k+0
+  +0+0-k/+k-k+0/-j+j+j
+  +0+0-k/+k-k+j/-j+j+0
+  +0+j+0/+j+0+j/-k-k-k
+  +0+j+0/+j+0+k/-k-k-j
+  +0+j+0/+j+0-j/-k-k+k
+  +0+j+0/+j+0-k/-k-k+j
+  +0+j+0/+j-k+j/-k+0-k
+  +0+j+0/+j-k+k/-k+0-j
+  +0+j+0/+j-k-j/-k+0+k
+  +0+j+0/+j-k-k/-k+0+j
+  +0+j+0/+k+0+j/-j-k-k
+  +0+j+0/+k+0+k/-j-k-j
+  +0+j+0/+k+0-j/-j-k+k
+  +0+j+0/+k+0-k/-j-k+j
+  +0+j+0/+k-k+j/-j+0-k
+  +0+j+0/+k-k+k/-j+0-j
+  +0+j+0/+k-k-j/-j+0+k
+  +0+j+0/+k-k-k/-j+0+j
+  +0+j+j/+j+0-k/-k-k+0
+  +0+j+j/+j-k+0/-k+0-k
+  +0+j+j/+k+0-k/-j-k+0
+  +0+j+j/+k-k+0/-j+0-k
+  +0+j+k/+j+0-j/-k-k+0
+  +0+j+k/+j-k+0/-k+0-j
+  +0+j+k/+k+0-j/-j-k+0
+  +0+j+k/+k-k+0/-j+0-j
+  +0+j-j/+j+0+k/-k-k+0
+  +0+j-j/+j-k+0/-k+0+k
+  +0+j-j/+k+0+k/-j-k+0
+  +0+j-j/+k-k+0/-j+0+k
+  +0+j-k/+j+0+j/-k-k+0
+  +0+j-k/+j-k+0/-k+0+j
+  +0+j-k/+k+0+j/-j-k+0
+  +0+j-k/+k-k+0/-j+0+j
+  +0+k+0/+j+0+j/-k-j-k
+  +0+k+0/+j+0+k/-k-j-j
+  +0+k+0/+j+0-j/-k-j+k
+  +0+k+0/+j+0-k/-k-j+j
+  +0+k+0/+j-j+j/-k+0-k
+  +0+k+0/+j-j+k/-k+0-j
+  +0+k+0/+j-j-j/-k+0+k
+  +0+k+0/+j-j-k/-k+0+j
+  +0+k+0/+k+0+j/-j-j-k
+  +0+k+0/+k+0+k/-j-j-j
+  +0+k+0/+k+0-j/-j-j+k
+  +0+k+0/+k+0-k/-j-j+j
+  +0+k+0/+k-j+j/-j+0-k
+  +0+k+0/+k-j+k/-j+0-j
+  +0+k+0/+k-j-j/-j+0+k
+  +0+k+0/+k-j-k/-j+0+j
+  +0-j+j/+j+0-k/-k+k+0
+  +0-j+j/+j+k+0/-k+0-k
+  +0-j+j/+k+0-k/-j+k+0
+  +0-j+j/+k+k+0/-j+0-k
+  +0-j+k/+j+0-j/-k+k+0
+  +0-j+k/+j+k+0/-k+0-j
+  +0-j+k/+k+0-j/-j+k+0
+  +0-j+k/+k+k+0/-j+0-j
+  +0-j-j/+j+0+k/-k+k+0
+  +0-j-j/+j+k+0/-k+0+k
+  +0-j-j/+k+0+k/-j+k+0
+  +0-j-j/+k+k+0/-j+0+k
+  +0-j-k/+j+0+j/-k+k+0
+  +0-j-k/+j+k+0/-k+0+j
+  +0-j-k/+k+0+j/-j+k+0
+  +0-j-k/+k+k+0/-j+0+j
+
+======================================================================
+Opción 5, n = 2
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 36
+Viejo: 5 estructuras, 5 claves únicas
+Nuevo: 5 estructuras, 5 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (5):
+  (+k-k)(+k-k)/*j*j/+0+0
+  (+k-k)(+k-k)/*j+0/+0*j
+  (+k-k)*j/*j(+k-k)/+0+0
+  (+k-k)*j/*j+0/+0(+k-k)
+  (+k-k)+0/*j*j/+0(+k-k)
+
+======================================================================
+Opción 5, n = 3
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 60
+Viejo: 21 estructuras, 21 claves únicas
+Nuevo: 21 estructuras, 21 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (21):
+  (+k-k)(+k-k)(+k-k)/*j*j*j/+0+0+0
+  (+k-k)(+k-k)(+k-k)/*j*j+0/+0+0*j
+  (+k-k)(+k-k)(+k-k)/*j+0*j/+0*j+0
+  (+k-k)(+k-k)*j/*j*j(+k-k)/+0+0+0
+  (+k-k)(+k-k)*j/*j*j+0/+0+0(+k-k)
+  (+k-k)(+k-k)*j/*j+0(+k-k)/+0*j+0
+  (+k-k)(+k-k)*j/*j+0+0/+0*j(+k-k)
+  (+k-k)(+k-k)+0/*j*j(+k-k)/+0+0*j
+  (+k-k)(+k-k)+0/*j*j*j/+0+0(+k-k)
+  (+k-k)(+k-k)+0/*j+0(+k-k)/+0*j*j
+  (+k-k)(+k-k)+0/*j+0*j/+0*j(+k-k)
+  (+k-k)*j(+k-k)/*j(+k-k)*j/+0+0+0
+  (+k-k)*j(+k-k)/*j(+k-k)+0/+0+0*j
+  (+k-k)*j(+k-k)/*j+0*j/+0(+k-k)+0
+  (+k-k)*j*j/*j(+k-k)+0/+0+0(+k-k)
+  (+k-k)*j*j/*j+0(+k-k)/+0(+k-k)+0
+  (+k-k)*j+0/*j(+k-k)*j/+0+0(+k-k)
+  (+k-k)*j+0/*j+0(+k-k)/+0(+k-k)*j
+  (+k-k)+0(+k-k)/*j(+k-k)*j/+0*j+0
+  (+k-k)+0(+k-k)/*j(+k-k)+0/+0*j*j
+  (+k-k)+0(+k-k)/*j*j*j/+0(+k-k)+0
+
+======================================================================
+Opción 6, n = 2
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 36
+Viejo: 5 estructuras, 5 claves únicas
+Nuevo: 5 estructuras, 5 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (5):
+  *j*j/+k+k/-k-k
+  *j*j/+k-k/-k+k
+  *j+k/+k*j/-k-k
+  *j+k/+k-k/-k*j
+  *j-k/+k*j/-k+k
+
+======================================================================
+Opción 6, n = 3
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 60
+Viejo: 21 estructuras, 21 claves únicas
+Nuevo: 21 estructuras, 21 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (21):
+  *j*j*j/+k+k+k/-k-k-k
+  *j*j*j/+k+k-k/-k-k+k
+  *j*j*j/+k-k+k/-k+k-k
+  *j*j+k/+k+k*j/-k-k-k
+  *j*j+k/+k+k-k/-k-k*j
+  *j*j+k/+k-k*j/-k+k-k
+  *j*j+k/+k-k-k/-k+k*j
+  *j*j-k/+k+k*j/-k-k+k
+  *j*j-k/+k+k+k/-k-k*j
+  *j*j-k/+k-k*j/-k+k+k
+  *j*j-k/+k-k+k/-k+k*j
+  *j+k*j/+k*j+k/-k-k-k
+  *j+k*j/+k*j-k/-k-k+k
+  *j+k*j/+k-k+k/-k*j-k
+  *j+k*j/+k-k-k/-k*j+k
+  *j+k+k/+k*j-k/-k-k*j
+  *j+k+k/+k-k*j/-k*j-k
+  *j+k-k/+k-k*j/-k*j+k
+  *j-k+k/+k*j-k/-k+k*j
+  *j-k+k/+k+k*j/-k*j-k
+  *j-k-k/+k+k*j/-k*j+k
+
+======================================================================
+Opción 7, n = 2
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 144
+Viejo: 16 estructuras, 16 claves únicas
+Nuevo: 16 estructuras, 16 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (16):
+  (+k-l)(+k-l)/*j*j/+0+0
+  (+k-l)(+k-l)/*j+0/+0*j
+  (+k-l)(-k+l)/*j*j/+0+0
+  (+k-l)(-k+l)/*j+0/+0*j
+  (+k-l)*j/*j(+k-l)/+0+0
+  (+k-l)*j/*j(-k+l)/+0+0
+  (+k-l)*j/*j+0/+0(+k-l)
+  (+k-l)*j/*j+0/+0(-k+l)
+  (+k-l)+0/*j(+k-l)/+0*j
+  (+k-l)+0/*j*j/+0(+k-l)
+  (+k-l)+0/*j*j/+0(-k+l)
+  (-k+l)(+k-l)/*j*j/+0+0
+  (-k+l)(+k-l)/*j+0/+0*j
+  (-k+l)*j/*j(+k-l)/+0+0
+  (-k+l)*j/*j+0/+0(+k-l)
+  (-k+l)+0/*j*j/+0(+k-l)
+
+======================================================================
+Opción 7, n = 3
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 384
+Viejo: 144 estructuras, 144 claves únicas
+Nuevo: 144 estructuras, 144 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (144):
+  (+k-l)(+k-l)(+k-l)/*j*j*j/+0+0+0
+  (+k-l)(+k-l)(+k-l)/*j*j+0/+0+0*j
+  (+k-l)(+k-l)(+k-l)/*j+0*j/+0*j+0
+  (+k-l)(+k-l)(+k-l)/*j+0+0/+0*j*j
+  (+k-l)(+k-l)(-k+l)/*j*j*j/+0+0+0
+  (+k-l)(+k-l)(-k+l)/*j*j+0/+0+0*j
+  (+k-l)(+k-l)(-k+l)/*j+0*j/+0*j+0
+  (+k-l)(+k-l)(-k+l)/*j+0+0/+0*j*j
+  (+k-l)(+k-l)*j/*j*j(+k-l)/+0+0+0
+  (+k-l)(+k-l)*j/*j*j(-k+l)/+0+0+0
+  (+k-l)(+k-l)*j/*j*j+0/+0+0(+k-l)
+  (+k-l)(+k-l)*j/*j*j+0/+0+0(-k+l)
+  (+k-l)(+k-l)*j/*j+0(+k-l)/+0*j+0
+  (+k-l)(+k-l)*j/*j+0(-k+l)/+0*j+0
+  (+k-l)(+k-l)*j/*j+0+0/+0*j(+k-l)
+  (+k-l)(+k-l)*j/*j+0+0/+0*j(-k+l)
+  (+k-l)(+k-l)+0/*j*j(+k-l)/+0+0*j
+  (+k-l)(+k-l)+0/*j*j(-k+l)/+0+0*j
+  (+k-l)(+k-l)+0/*j*j*j/+0+0(+k-l)
+  (+k-l)(+k-l)+0/*j*j*j/+0+0(-k+l)
+  (+k-l)(+k-l)+0/*j+0(+k-l)/+0*j*j
+  (+k-l)(+k-l)+0/*j+0(-k+l)/+0*j*j
+  (+k-l)(+k-l)+0/*j+0*j/+0*j(+k-l)
+  (+k-l)(+k-l)+0/*j+0*j/+0*j(-k+l)
+  (+k-l)(-k+l)(+k-l)/*j*j*j/+0+0+0
+  (+k-l)(-k+l)(+k-l)/*j*j+0/+0+0*j
+  (+k-l)(-k+l)(+k-l)/*j+0*j/+0*j+0
+  (+k-l)(-k+l)(+k-l)/*j+0+0/+0*j*j
+  (+k-l)(-k+l)*j/*j*j(+k-l)/+0+0+0
+  (+k-l)(-k+l)*j/*j*j(-k+l)/+0+0+0
+  (+k-l)(-k+l)*j/*j*j+0/+0+0(+k-l)
+  (+k-l)(-k+l)*j/*j*j+0/+0+0(-k+l)
+  (+k-l)(-k+l)*j/*j+0(+k-l)/+0*j+0
+  (+k-l)(-k+l)*j/*j+0(-k+l)/+0*j+0
+  (+k-l)(-k+l)*j/*j+0+0/+0*j(+k-l)
+  (+k-l)(-k+l)*j/*j+0+0/+0*j(-k+l)
+  (+k-l)(-k+l)+0/*j*j(+k-l)/+0+0*j
+  (+k-l)(-k+l)+0/*j*j(-k+l)/+0+0*j
+  (+k-l)(-k+l)+0/*j*j*j/+0+0(+k-l)
+  (+k-l)(-k+l)+0/*j*j*j/+0+0(-k+l)
+  (+k-l)(-k+l)+0/*j+0(+k-l)/+0*j*j
+  (+k-l)(-k+l)+0/*j+0(-k+l)/+0*j*j
+  (+k-l)(-k+l)+0/*j+0*j/+0*j(+k-l)
+  (+k-l)(-k+l)+0/*j+0*j/+0*j(-k+l)
+  (+k-l)*j(+k-l)/*j(+k-l)*j/+0+0+0
+  (+k-l)*j(+k-l)/*j(+k-l)+0/+0+0*j
+  (+k-l)*j(+k-l)/*j(-k+l)*j/+0+0+0
+  (+k-l)*j(+k-l)/*j(-k+l)+0/+0+0*j
+  (+k-l)*j(+k-l)/*j+0*j/+0(+k-l)+0
+  (+k-l)*j(+k-l)/*j+0*j/+0(-k+l)+0
+  (+k-l)*j(+k-l)/*j+0+0/+0(+k-l)*j
+  (+k-l)*j(+k-l)/*j+0+0/+0(-k+l)*j
+  (+k-l)*j(-k+l)/*j(+k-l)*j/+0+0+0
+  (+k-l)*j(-k+l)/*j(+k-l)+0/+0+0*j
+  (+k-l)*j(-k+l)/*j(-k+l)+0/+0+0*j
+  (+k-l)*j(-k+l)/*j+0*j/+0(+k-l)+0
+  (+k-l)*j*j/*j(+k-l)(+k-l)/+0+0+0
+  (+k-l)*j*j/*j(+k-l)+0/+0+0(+k-l)
+  (+k-l)*j*j/*j(+k-l)+0/+0+0(-k+l)
+  (+k-l)*j*j/*j(-k+l)(+k-l)/+0+0+0
+  (+k-l)*j*j/*j(-k+l)+0/+0+0(+k-l)
+  (+k-l)*j*j/*j(-k+l)+0/+0+0(-k+l)
+  (+k-l)*j*j/*j+0(+k-l)/+0(+k-l)+0
+  (+k-l)*j*j/*j+0(+k-l)/+0(-k+l)+0
+  (+k-l)*j*j/*j+0(-k+l)/+0(+k-l)+0
+  (+k-l)*j*j/*j+0(-k+l)/+0(-k+l)+0
+  (+k-l)*j*j/*j+0+0/+0(+k-l)(+k-l)
+  (+k-l)*j*j/*j+0+0/+0(-k+l)(+k-l)
+  (+k-l)*j+0/*j(+k-l)(+k-l)/+0+0*j
+  (+k-l)*j+0/*j(+k-l)*j/+0+0(+k-l)
+  (+k-l)*j+0/*j(+k-l)*j/+0+0(-k+l)
+  (+k-l)*j+0/*j(-k+l)(+k-l)/+0+0*j
+  (+k-l)*j+0/*j(-k+l)*j/+0+0(+k-l)
+  (+k-l)*j+0/*j(-k+l)*j/+0+0(-k+l)
+  (+k-l)*j+0/*j+0(+k-l)/+0(+k-l)*j
+  (+k-l)*j+0/*j+0(+k-l)/+0(-k+l)*j
+  (+k-l)*j+0/*j+0(-k+l)/+0(+k-l)*j
+  (+k-l)*j+0/*j+0(-k+l)/+0(-k+l)*j
+  (+k-l)*j+0/*j+0*j/+0(+k-l)(+k-l)
+  (+k-l)*j+0/*j+0*j/+0(-k+l)(+k-l)
+  (+k-l)+0(+k-l)/*j(+k-l)*j/+0*j+0
+  (+k-l)+0(+k-l)/*j(+k-l)+0/+0*j*j
+  (+k-l)+0(+k-l)/*j(-k+l)*j/+0*j+0
+  (+k-l)+0(+k-l)/*j(-k+l)+0/+0*j*j
+  (+k-l)+0(+k-l)/*j*j*j/+0(+k-l)+0
+  (+k-l)+0(+k-l)/*j*j*j/+0(-k+l)+0
+  (+k-l)+0(+k-l)/*j*j+0/+0(+k-l)*j
+  (+k-l)+0(+k-l)/*j*j+0/+0(-k+l)*j
+  (+k-l)+0(-k+l)/*j(+k-l)*j/+0*j+0
+  (+k-l)+0(-k+l)/*j(+k-l)+0/+0*j*j
+  (+k-l)+0(-k+l)/*j(-k+l)+0/+0*j*j
+  (+k-l)+0(-k+l)/*j*j*j/+0(+k-l)+0
+  (+k-l)+0*j/*j(+k-l)(+k-l)/+0*j+0
+  (+k-l)+0*j/*j(+k-l)+0/+0*j(+k-l)
+  (+k-l)+0*j/*j(-k+l)(+k-l)/+0*j+0
+  (+k-l)+0*j/*j(-k+l)+0/+0*j(+k-l)
+  (+k-l)+0*j/*j*j(+k-l)/+0(+k-l)+0
+  (+k-l)+0*j/*j*j(+k-l)/+0(-k+l)+0
+  (+k-l)+0*j/*j*j+0/+0(+k-l)(+k-l)
+  (+k-l)+0*j/*j*j+0/+0(-k+l)(+k-l)
+  (+k-l)+0+0/*j(+k-l)(+k-l)/+0*j*j
+  (+k-l)+0+0/*j(+k-l)*j/+0*j(+k-l)
+  (+k-l)+0+0/*j(-k+l)(+k-l)/+0*j*j
+  (+k-l)+0+0/*j(-k+l)*j/+0*j(+k-l)
+  (+k-l)+0+0/*j*j(+k-l)/+0(+k-l)*j
+  (+k-l)+0+0/*j*j(+k-l)/+0(-k+l)*j
+  (+k-l)+0+0/*j*j*j/+0(+k-l)(+k-l)
+  (+k-l)+0+0/*j*j*j/+0(-k+l)(+k-l)
+  (-k+l)(+k-l)(+k-l)/*j*j*j/+0+0+0
+  (-k+l)(+k-l)(+k-l)/*j*j+0/+0+0*j
+  (-k+l)(+k-l)(+k-l)/*j+0*j/+0*j+0
+  (-k+l)(+k-l)(+k-l)/*j+0+0/+0*j*j
+  (-k+l)(+k-l)*j/*j*j(+k-l)/+0+0+0
+  (-k+l)(+k-l)*j/*j*j+0/+0+0(+k-l)
+  (-k+l)(+k-l)*j/*j+0(+k-l)/+0*j+0
+  (-k+l)(+k-l)*j/*j+0+0/+0*j(+k-l)
+  (-k+l)(+k-l)+0/*j*j(+k-l)/+0+0*j
+  (-k+l)(+k-l)+0/*j*j*j/+0+0(+k-l)
+  (-k+l)(+k-l)+0/*j+0(+k-l)/+0*j*j
+  (-k+l)(+k-l)+0/*j+0*j/+0*j(+k-l)
+  (-k+l)(-k+l)*j/*j*j(+k-l)/+0+0+0
+  (-k+l)(-k+l)*j/*j*j+0/+0+0(+k-l)
+  (-k+l)(-k+l)*j/*j+0(+k-l)/+0*j+0
+  (-k+l)(-k+l)*j/*j+0+0/+0*j(+k-l)
+  (-k+l)(-k+l)+0/*j*j(+k-l)/+0+0*j
+  (-k+l)(-k+l)+0/*j*j*j/+0+0(+k-l)
+  (-k+l)(-k+l)+0/*j+0(+k-l)/+0*j*j
+  (-k+l)(-k+l)+0/*j+0*j/+0*j(+k-l)
+  (-k+l)*j(+k-l)/*j(+k-l)*j/+0+0+0
+  (-k+l)*j(+k-l)/*j(+k-l)+0/+0+0*j
+  (-k+l)*j(+k-l)/*j(-k+l)+0/+0+0*j
+  (-k+l)*j(+k-l)/*j+0*j/+0(+k-l)+0
+  (-k+l)*j*j/*j(+k-l)+0/+0+0(+k-l)
+  (-k+l)*j*j/*j(-k+l)+0/+0+0(+k-l)
+  (-k+l)*j*j/*j+0(+k-l)/+0(+k-l)+0
+  (-k+l)*j*j/*j+0(+k-l)/+0(-k+l)+0
+  (-k+l)*j+0/*j(+k-l)*j/+0+0(+k-l)
+  (-k+l)*j+0/*j(-k+l)*j/+0+0(+k-l)
+  (-k+l)*j+0/*j+0(+k-l)/+0(+k-l)*j
+  (-k+l)*j+0/*j+0(+k-l)/+0(-k+l)*j
+  (-k+l)+0(+k-l)/*j(+k-l)*j/+0*j+0
+  (-k+l)+0(+k-l)/*j(+k-l)+0/+0*j*j
+  (-k+l)+0(+k-l)/*j(-k+l)+0/+0*j*j
+  (-k+l)+0(+k-l)/*j*j*j/+0(+k-l)+0
+
+======================================================================
+Opción 8, n = 2
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 144
+Viejo: 16 estructuras, 16 claves únicas
+Nuevo: 16 estructuras, 16 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (16):
+  *j*j/+k+k/-l-l
+  *j*j/+k+l/-l-k
+  *j*j/+k-k/-l+l
+  *j*j/+k-l/-l+k
+  *j*j/+l+k/-k-l
+  *j*j/+l-l/-k+k
+  *j+k/+k*j/-l-l
+  *j+k/+k-l/-l*j
+  *j+k/+l*j/-k-l
+  *j+k/+l-l/-k*j
+  *j+l/+k*j/-l-k
+  *j+l/+k-k/-l*j
+  *j+l/+l*j/-k-k
+  *j-k/+k*j/-l+l
+  *j-k/+l*j/-k+l
+  *j-l/+l*j/-k+k
+
+======================================================================
+Opción 8, n = 3
+======================================================================
+Grupo: 12 operaciones
+Candidatos: 384
+Viejo: 144 estructuras, 144 claves únicas
+Nuevo: 144 estructuras, 144 claves únicas
+¿Conjuntos idénticos? SÍ
+
+Claves canónicas (144):
+  *j*j*j/+k+k+k/-l-l-l
+  *j*j*j/+k+k+l/-l-l-k
+  *j*j*j/+k+k-k/-l-l+l
+  *j*j*j/+k+k-l/-l-l+k
+  *j*j*j/+k+l+k/-l-k-l
+  *j*j*j/+k+l-k/-l-k+l
+  *j*j*j/+k+l-l/-l-k+k
+  *j*j*j/+k-k+k/-l+l-l
+  *j*j*j/+k-k+l/-l+l-k
+  *j*j*j/+k-k-l/-l+l+k
+  *j*j*j/+k-l+k/-l+k-l
+  *j*j*j/+k-l-l/-l+k+k
+  *j*j*j/+l+k+k/-k-l-l
+  *j*j*j/+l+k-l/-k-l+k
+  *j*j*j/+l+l-l/-k-k+k
+  *j*j*j/+l-k+k/-k+l-l
+  *j*j+k/+k+k*j/-l-l-l
+  *j*j+k/+k+k-l/-l-l*j
+  *j*j+k/+k+l*j/-l-k-l
+  *j*j+k/+k+l-l/-l-k*j
+  *j*j+k/+k-k*j/-l+l-l
+  *j*j+k/+k-k-l/-l+l*j
+  *j*j+k/+k-l*j/-l+k-l
+  *j*j+k/+k-l-l/-l+k*j
+  *j*j+k/+l+k*j/-k-l-l
+  *j*j+k/+l+k-l/-k-l*j
+  *j*j+k/+l+l*j/-k-k-l
+  *j*j+k/+l+l-l/-k-k*j
+  *j*j+k/+l-k*j/-k+l-l
+  *j*j+k/+l-k-l/-k+l*j
+  *j*j+k/+l-l*j/-k+k-l
+  *j*j+k/+l-l-l/-k+k*j
+  *j*j+l/+k+k*j/-l-l-k
+  *j*j+l/+k+k-k/-l-l*j
+  *j*j+l/+k+l*j/-l-k-k
+  *j*j+l/+k+l-k/-l-k*j
+  *j*j+l/+k-k*j/-l+l-k
+  *j*j+l/+k-k-k/-l+l*j
+  *j*j+l/+k-l*j/-l+k-k
+  *j*j+l/+k-l-k/-l+k*j
+  *j*j+l/+l+k*j/-k-l-k
+  *j*j+l/+l+k-k/-k-l*j
+  *j*j+l/+l+l*j/-k-k-k
+  *j*j+l/+l+l-k/-k-k*j
+  *j*j+l/+l-k*j/-k+l-k
+  *j*j+l/+l-k-k/-k+l*j
+  *j*j+l/+l-l*j/-k+k-k
+  *j*j+l/+l-l-k/-k+k*j
+  *j*j-k/+k+k*j/-l-l+l
+  *j*j-k/+k+k+l/-l-l*j
+  *j*j-k/+k+l*j/-l-k+l
+  *j*j-k/+k+l+l/-l-k*j
+  *j*j-k/+k-k*j/-l+l+l
+  *j*j-k/+k-k+l/-l+l*j
+  *j*j-k/+k-l*j/-l+k+l
+  *j*j-k/+k-l+l/-l+k*j
+  *j*j-k/+l+k*j/-k-l+l
+  *j*j-k/+l+k+l/-k-l*j
+  *j*j-k/+l+l*j/-k-k+l
+  *j*j-k/+l+l+l/-k-k*j
+  *j*j-k/+l-k*j/-k+l+l
+  *j*j-k/+l-k+l/-k+l*j
+  *j*j-k/+l-l*j/-k+k+l
+  *j*j-k/+l-l+l/-k+k*j
+  *j*j-l/+k+k*j/-l-l+k
+  *j*j-l/+k+k+k/-l-l*j
+  *j*j-l/+k+l*j/-l-k+k
+  *j*j-l/+k+l+k/-l-k*j
+  *j*j-l/+k-k*j/-l+l+k
+  *j*j-l/+k-k+k/-l+l*j
+  *j*j-l/+k-l*j/-l+k+k
+  *j*j-l/+k-l+k/-l+k*j
+  *j*j-l/+l+k*j/-k-l+k
+  *j*j-l/+l+k+k/-k-l*j
+  *j*j-l/+l+l*j/-k-k+k
+  *j*j-l/+l+l+k/-k-k*j
+  *j*j-l/+l-k*j/-k+l+k
+  *j*j-l/+l-k+k/-k+l*j
+  *j*j-l/+l-l*j/-k+k+k
+  *j*j-l/+l-l+k/-k+k*j
+  *j+k*j/+k*j+k/-l-l-l
+  *j+k*j/+k*j+l/-l-l-k
+  *j+k*j/+k*j-k/-l-l+l
+  *j+k*j/+k*j-l/-l-l+k
+  *j+k*j/+k-l+k/-l*j-l
+  *j+k*j/+k-l+l/-l*j-k
+  *j+k*j/+k-l-k/-l*j+l
+  *j+k*j/+k-l-l/-l*j+k
+  *j+k*j/+l*j+k/-k-l-l
+  *j+k*j/+l*j+l/-k-l-k
+  *j+k*j/+l*j-k/-k-l+l
+  *j+k*j/+l*j-l/-k-l+k
+  *j+k*j/+l-l+k/-k*j-l
+  *j+k*j/+l-l+l/-k*j-k
+  *j+k*j/+l-l-k/-k*j+l
+  *j+k*j/+l-l-l/-k*j+k
+  *j+k+k/+k*j-l/-l-l*j
+  *j+k+k/+k-l*j/-l*j-l
+  *j+k+k/+l*j-l/-k-l*j
+  *j+k+k/+l-l*j/-k*j-l
+  *j+k+l/+k*j-k/-l-l*j
+  *j+k+l/+k-l*j/-l*j-k
+  *j+k+l/+l*j-k/-k-l*j
+  *j+k+l/+l-l*j/-k*j-k
+  *j+k-k/+k*j+l/-l-l*j
+  *j+k-k/+k-l*j/-l*j+l
+  *j+k-k/+l*j+l/-k-l*j
+  *j+k-k/+l-l*j/-k*j+l
+  *j+k-l/+k*j+k/-l-l*j
+  *j+k-l/+k-l*j/-l*j+k
+  *j+k-l/+l*j+k/-k-l*j
+  *j+k-l/+l-l*j/-k*j+k
+  *j+l*j/+k*j+k/-l-k-l
+  *j+l*j/+k*j+l/-l-k-k
+  *j+l*j/+k*j-k/-l-k+l
+  *j+l*j/+k*j-l/-l-k+k
+  *j+l*j/+k-k+k/-l*j-l
+  *j+l*j/+k-k+l/-l*j-k
+  *j+l*j/+k-k-k/-l*j+l
+  *j+l*j/+k-k-l/-l*j+k
+  *j+l*j/+l*j+k/-k-k-l
+  *j+l*j/+l*j+l/-k-k-k
+  *j+l*j/+l*j-k/-k-k+l
+  *j+l*j/+l*j-l/-k-k+k
+  *j+l*j/+l-k+k/-k*j-l
+  *j+l*j/+l-k+l/-k*j-k
+  *j+l*j/+l-k-k/-k*j+l
+  *j+l*j/+l-k-l/-k*j+k
+  *j-k+k/+k*j-l/-l+l*j
+  *j-k+k/+k+l*j/-l*j-l
+  *j-k+k/+l*j-l/-k+l*j
+  *j-k+k/+l+l*j/-k*j-l
+  *j-k+l/+k*j-k/-l+l*j
+  *j-k+l/+k+l*j/-l*j-k
+  *j-k+l/+l*j-k/-k+l*j
+  *j-k+l/+l+l*j/-k*j-k
+  *j-k-k/+k*j+l/-l+l*j
+  *j-k-k/+k+l*j/-l*j+l
+  *j-k-k/+l*j+l/-k+l*j
+  *j-k-k/+l+l*j/-k*j+l
+  *j-k-l/+k*j+k/-l+l*j
+  *j-k-l/+k+l*j/-l*j+k
+  *j-k-l/+l*j+k/-k+l*j
+  *j-k-l/+l+l*j/-k*j+k
